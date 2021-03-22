@@ -1,0 +1,17 @@
+[package]
+name = "citeproc-ffi"
+version = "0.0.1"
+authors = ["Cormac Relf <web@cormacrelf.net>"]
+edition = "2018"
+
+[lib]
+name = "citeproc_rs"
+crate-type = ["lib", "staticlib", "cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+csl = { path = "../../crates/csl" }
+citeproc = { path = "../../crates/citeproc" }
+libc = "0.2.90"
+serde_json = "1.0.64"

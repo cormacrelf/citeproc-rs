@@ -1,0 +1,15 @@
+# See https://github.com/eqrion/cbindgen/blob/master/docs.md#cbindgentoml
+# for detailed documentation
+
+language = "C"
+include_guard = "_CITEPROC_RS_H"
+cpp_compat = true
+documentation_style = "c"
+
+[parse.expand]
+crates = ["citeproc-capi"]
+
+# [export.rename]
+# "Exec" = "hyper_executor"
+# "Io" = "hyper_io"
+# "Task" = "hyper_task"

@@ -29,6 +29,7 @@ pub mod prelude {
     pub use citeproc_io::output::{markup::Markup, OutputFormat};
     pub use citeproc_io::{ Cite, Reference, SmartString, };
     pub use citeproc_proc::db::{ImplementationDetails, IrDatabase};
+    pub use citeproc_db::PredefinedLocales;
     pub use csl::Atom;
 }
 

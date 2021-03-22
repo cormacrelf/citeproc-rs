@@ -7,7 +7,7 @@ cpp_compat = true
 documentation_style = "c"
 
 [parse.expand]
-crates = ["citeproc-capi"]
+crates = ["citeproc-ffi"]
 
 # [export.rename]
 # "Exec" = "hyper_executor"

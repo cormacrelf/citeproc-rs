@@ -311,16 +311,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "citeproc-capi"
-version = "0.1.0"
-dependencies = [
- "citeproc",
- "csl",
- "libc",
- "serde_json",
-]
-
-[[package]]
 name = "citeproc-cli"
 version = "0.1.0"
 dependencies = [
@@ -343,6 +333,16 @@ dependencies = [
  "serde",
  "serde_derive",
  "string-interner",
+]
+
+[[package]]
+name = "citeproc-ffi"
+version = "0.0.1"
+dependencies = [
+ "citeproc",
+ "csl",
+ "libc",
+ "serde_json",
 ]
 
 [[package]]

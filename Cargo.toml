@@ -23,7 +23,7 @@ debug = true
 
 [profile.release]
 lto = "thin"
-debug = true
+debug = false
 
 # [profile.dev]
 # rpath = true

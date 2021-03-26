@@ -50,7 +50,11 @@ thiserror = "1.0.20"
 string-interner = "0.12.0"
 parking_lot = "0.11.0"
 rand = "0.7.3"
-indexmap = "1.6.0"
+# use std feature despite never compiling without it because sometimes with
+# custom targets / rustc -Z build-std, cfg(has_std) stops working and you get
+# indexmap in no_std mode? idk. But this works. Petgraph stops complaining.
+indexmap = { version = "1.6.2", features = ["std"]}
+
 
 [dev-dependencies]
 test_utils = { path = "../test-utils" }

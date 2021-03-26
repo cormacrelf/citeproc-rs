@@ -1,0 +1,6 @@
+// A modulemap just so clang modules and e.g. swiftc
+// can find this header more easily
+module CiteprocRs {
+    header "include/citeproc_rs.h"
+    export *
+}
